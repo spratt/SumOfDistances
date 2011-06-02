@@ -4,9 +4,9 @@
 //                           (All rights reserved)                           //
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                           //
-// FILE:    SumOfDifferences.h                                               //
+// FILE:    SumOfDistances.h                                                 //
 //                                                                           //
-// MODULE:  Sum of Differences                                               //
+// MODULE:  Sum of Distances                                                 //
 //                                                                           //
 // PURPOSE: To compare different methods of summing differences.             //
 //                                                                           //
@@ -25,7 +25,7 @@
 
 using namespace std;
 
-namespace SumOfDifferences {
+namespace SumOfDistances {
   template <class coord_T>
   coord_T naiveSum(const vector<coord_T>& v)  {
     coord_T t = 0;

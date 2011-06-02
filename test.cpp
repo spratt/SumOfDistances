@@ -1,8 +1,21 @@
+///////////////////////////////////////////////////////////////////////////////
+//                       Copyright (c) 2011 - 2012 by                        //
+//                                Simon Pratt                                //
+//                           (All rights reserved)                           //
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           //
+// FILE:    test.cpp                                                         //
+//                                                                           //
+// MODULE:  Sum of Distances                                                 //
+//                                                                           //
+// NOTES:   None.                                                            //
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <vector>
 #include <stdlib.h>
 #include <time.h>
-#include "SumOfDifferences.h"
+#include "SumOfDistances.h"
 
 using namespace std;
 
@@ -37,7 +50,7 @@ int main(int argv, char** argc) {
   // Neat algorithm O(n)                                                     //
   /////////////////////////////////////////////////////////////////////////////
   before = time(0);
-  result = SumOfDifferences::neatSum<int>(v);
+  result = SumOfDistances::neatSum<int>(v);
   after = time(0);
   cout << "Neat:  " << result << endl
        << "Took:  " << (before-after) << endl;
@@ -45,7 +58,7 @@ int main(int argv, char** argc) {
   // Naiive algorithm O(n^2)                                                 //
   /////////////////////////////////////////////////////////////////////////////
   before = time(0);
-  result = SumOfDifferences::naiveSum<int>(v);
+  result = SumOfDistances::naiveSum<int>(v);
   after = time(0);
   cout << "Naive: " << result << endl
        << "Took:  " << (before-after) << endl;

@@ -4,13 +4,12 @@
 //                           (All rights reserved)                           //
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                           //
-// FILE:    SumOfDifferences.cpp                                             //
+// FILE:    SumOfDistances.cpp                                               //
 //                                                                           //
-// MODULE:  Different methods to calculate the sum of differences            //
-//          between each point and any other point in a set of points.       //
+// MODULE:  Sum Of Distances                                                 //
 //                                                                           //
 // NOTES:   Assumes vectors are sorted.                                      //
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "SumOfDifferences.h"
+#include "SumOfDistances.h"
