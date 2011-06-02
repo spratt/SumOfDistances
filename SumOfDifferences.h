@@ -31,7 +31,7 @@ namespace SumOfDifferences {
     coord_T t = 0;
     for(int i = 0; i < ((int)v.size())-1; i++) {
       for(int j = i+1; j < (int)v.size(); j++) {
-	t += j - i;
+	t += v[j] - v[i];
       }
     }
     return t;
